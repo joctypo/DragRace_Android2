@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:backgroundTint="#2B2B2B"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#EF437D"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/debora" />
+
+    <Button
+        android:id="@+id/izquierda"
+        android:layout_width="55dp"
+        android:layout_height="64dp"
+        android:layout_marginStart="515dp"
+        android:layout_marginTop="180dp"
+        android:layout_marginBottom="167dp"
+        android:backgroundTint="@color/purple_200"
+        app:icon="@drawable/abc_vector_test"
+        app:iconPadding="1dp"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView"
+        app:layout_constraintStart_toStartOf="@+id/imageView"
+        app:layout_constraintTop_toTopOf="@+id/imageView" />
+
+    <Button
+        android:id="@+id/abajo"
+        android:layout_width="55dp"
+        android:layout_height="64dp"
+        android:layout_marginStart="570dp"
+        android:layout_marginEnd="106dp"
+        android:layout_marginBottom="111dp"
+        android:backgroundTint="@color/purple_200"
+        android:rotation="270"
+        app:icon="@drawable/abc_vector_test"
+        app:iconPadding="1dp"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView"
+        app:layout_constraintEnd_toEndOf="@+id/imageView"
+        app:layout_constraintStart_toStartOf="@+id/imageView" />
+
+    <Button
+        android:id="@+id/derecha"
+        android:layout_width="55dp"
+        android:layout_height="64dp"
+        android:layout_marginTop="180dp"
+        android:layout_marginEnd="51dp"
+        android:backgroundTint="@color/purple_200"
+        android:rotation="180"
+        app:icon="@drawable/abc_vector_test"
+        app:iconPadding="1dp"
+        app:layout_constraintEnd_toEndOf="@+id/imageView"
+        app:layout_constraintTop_toTopOf="@+id/imageView" />
+
+    <Button
+        android:id="@+id/arriba"
+        android:layout_width="55dp"
+        android:layout_height="64dp"
+        android:layout_marginStart="570dp"
+        android:layout_marginTop="125dp"
+        android:layout_marginEnd="106dp"
+        android:backgroundTint="@color/purple_200"
+        android:rotation="90"
+        app:icon="@drawable/abc_vector_test"
+        app:iconPadding="1dp"
+        app:layout_constraintEnd_toEndOf="@+id/imageView"
+        app:layout_constraintStart_toStartOf="@+id/imageView"
+        app:layout_constraintTop_toTopOf="@+id/imageView" />
+
+    <Button
+        android:id="@+id/recoger"
+        android:layout_width="117dp"
+        android:layout_height="124dp"
+        android:layout_marginStart="62dp"
+        android:layout_marginTop="164dp"
+        android:layout_marginBottom="123dp"
+        android:backgroundTint="#D65B85"
+        app:cornerRadius="300dp"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView"
+        app:layout_constraintStart_toStartOf="@+id/imageView"
+        app:layout_constraintTop_toTopOf="@+id/imageView" />
+</androidx.constraintlayout.widget.ConstraintLayout>
