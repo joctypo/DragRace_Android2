@@ -9,8 +9,8 @@
 
     <ImageView
         android:id="@+id/imageView"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
         android:backgroundTint="#EF437D"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -22,16 +22,13 @@
         android:id="@+id/abajo"
         android:layout_width="55dp"
         android:layout_height="64dp"
-        android:layout_marginStart="570dp"
-        android:layout_marginEnd="106dp"
         android:backgroundTint="@color/purple_200"
         android:rotation="270"
         app:icon="@drawable/abc_vector_test"
         app:iconPadding="1dp"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="@+id/imageView"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="@+id/imageView"
+        app:layout_constraintEnd_toStartOf="@+id/derecha"
+        app:layout_constraintStart_toEndOf="@+id/izquierda"
         app:layout_constraintTop_toBottomOf="@+id/arriba"
         app:layout_constraintVertical_bias="0.347" />
 
@@ -40,62 +37,57 @@
         android:layout_width="55dp"
         android:layout_height="64dp"
         android:layout_marginStart="52dp"
-        android:layout_marginTop="180dp"
         android:layout_marginEnd="52dp"
         android:backgroundTint="@color/purple_200"
         android:rotation="180"
         app:icon="@drawable/abc_vector_test"
         app:iconPadding="1dp"
-        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintBottom_toBottomOf="@+id/abajo"
         app:layout_constraintEnd_toEndOf="@+id/imageView"
         app:layout_constraintStart_toEndOf="@+id/izquierda"
-        app:layout_constraintTop_toTopOf="@+id/imageView"
-        app:layout_constraintVertical_bias="0.0" />
+        app:layout_constraintTop_toTopOf="@+id/arriba" />
 
     <Button
         android:id="@+id/izquierda"
         android:layout_width="55dp"
         android:layout_height="64dp"
-        android:layout_marginStart="516dp"
-        android:layout_marginTop="180dp"
-        android:layout_marginBottom="167dp"
+        android:layout_marginStart="490dp"
         android:backgroundTint="@color/purple_200"
         app:icon="@drawable/abc_vector_test"
         app:iconPadding="1dp"
-        app:layout_constraintBottom_toBottomOf="@+id/imageView"
+        app:layout_constraintBottom_toBottomOf="@+id/abajo"
         app:layout_constraintEnd_toStartOf="@+id/derecha"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toEndOf="@+id/imageView"
         app:layout_constraintStart_toStartOf="@+id/imageView"
-        app:layout_constraintTop_toTopOf="@+id/imageView"
-        app:layout_constraintVertical_bias="0.0" />
+        app:layout_constraintTop_toTopOf="@+id/arriba" />
 
     <Button
         android:id="@+id/arriba"
         android:layout_width="55dp"
         android:layout_height="64dp"
-        android:layout_marginStart="570dp"
-        android:layout_marginTop="116dp"
-        android:layout_marginEnd="106dp"
+        android:layout_marginTop="80dp"
         android:backgroundTint="@color/purple_200"
         android:rotation="90"
         app:icon="@drawable/abc_vector_test"
         app:iconPadding="1dp"
-        app:layout_constraintEnd_toEndOf="@+id/imageView"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="@+id/imageView"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintEnd_toStartOf="@+id/derecha"
+        app:layout_constraintHorizontal_bias="0.666"
+        app:layout_constraintStart_toEndOf="@+id/izquierda"
+        app:layout_constraintTop_toTopOf="@+id/imageView" />
 
     <Button
         android:id="@+id/recoger"
         android:layout_width="117dp"
         android:layout_height="124dp"
-        android:layout_marginStart="62dp"
+        android:layout_marginStart="80dp"
         android:backgroundTint="#D65B85"
         app:cornerRadius="300dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toStartOf="@+id/izquierda"
-        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintHorizontal_bias="0.028"
         app:layout_constraintStart_toStartOf="@+id/imageView"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.512" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>

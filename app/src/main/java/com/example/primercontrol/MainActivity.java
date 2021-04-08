@@ -3,6 +3,7 @@ package com.example.primercontrol;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
+import android.util.Log;
 import android.view.MotionEvent;
 import android.view.View;
 import android.widget.Button;
@@ -48,6 +49,7 @@ public class MainActivity extends AppCompatActivity implements View.OnTouchListe
         switch (v.getId()){
             case R.id.arriba:
                 accionesboton="UP";
+                Log.e("-->", "entro");
                 break;
 
 
