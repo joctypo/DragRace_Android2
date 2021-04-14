@@ -76,10 +76,12 @@ public class MainActivity extends AppCompatActivity implements View.OnTouchListe
 
             case MotionEvent.ACTION_DOWN:
                 accionesboton=accionesboton+"START";
+                tcp.accion(accionesboton);
                 break;
 
             case MotionEvent.ACTION_UP:
                 accionesboton=accionesboton+"STOP";
+                tcp.accion(accionesboton);
                 break;
 
         }
